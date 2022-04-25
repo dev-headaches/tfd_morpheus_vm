@@ -13,8 +13,8 @@ locals {
 }
 
 module "morpheus_vm" {
-    source  = "app.terraform.io/roman2025/vm-morpheus/azurerm"
-    version = ">= 0.0.9"
+    source  = "github.com/dev-headaches/terraform-azurerm-vm-morpheus"
+    #version = ">= 0.0.9"
     name = var.name
     prjnum = local.hubnamesplitlist[2]
     enviro = local.hubnamesplitlist[1]
