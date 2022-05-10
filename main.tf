@@ -16,9 +16,9 @@ module "morpheus_vm" {
     source  = "github.com/dev-headaches/terraform-azurerm-vm-morpheus"
     #version = ">= 0.0.9"
     name = var.name
-    prjnum = local.hubnamesplitlist[3]
-    enviro = local.hubnamesplitlist[2]
-    orgname = local.hubnamesplitlist[1]
+    prjnum = local.hubnamesplitlist[2]
+    enviro = local.hubnamesplitlist[1]
+    orgname = local.hubnamesplitlist[0]
     vmsize = var.vmsize
     morph_url = var.morph_url
     nbmorph_api_key = var.nbmorph_api_key
